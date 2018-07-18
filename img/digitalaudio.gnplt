@@ -1,0 +1,43 @@
+# fsize 16 doesn't work...
+set terminal svg size 500,375 fsize 16 enhanced
+
+# name of output svg file
+set output "4-bit-linear-PCM.svg"
+
+# don't show the key
+unset key
+
+# don't show the border or even tic marks
+unset border
+
+# the ytic labels have to be there just for the grid to work
+set grid ytics lw 1.5 lt 1 lc rgb 'grey25'
+
+# this is unnecessary...
+#set ytics("–8"-8,"–7"-7,"–6"-6,"–5"-5,"–4"-4,"–3"-3,"–2"-2,"–1"-1,"0"0,"1"1,"2"2,"3"3,"4"4,"5"5,"6"6,"7"7)
+
+# ok seems reasonable
+set tic scale 0
+
+# don't mark the x axis
+unset xtics
+
+# variable for setting things up...
+n=23
+
+# view range
+set xrange [0:n]
+set yrange [-8:7]
+
+# function definition
+f(x)=4*(sin(2*pi*x/n)+sin(6*pi*x/n-1))
+
+# output to a table - defaults to 100 samples?
+set table 'tmp.dat'
+plot f(x)-.5
+unset table
+
+# can set samples to some higher or lower number to get different lollipop freqs
+set samples n
+# can remove floor() to ignore quantization
+plot 'tmp.dat' w lines lw 4, floor(f(x)) w impulses lc rgb 'grey50' lw 1.5, floor(f(x)) w points pt 7 ps .8
