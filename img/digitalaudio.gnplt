@@ -27,7 +27,7 @@ n=23
 
 # view range
 set xrange [0:n]
-set yrange [-8:7]
+set yrange [-8:8]
 
 # function definition
 f(x)=4*(sin(2*pi*x/n)+sin(6*pi*x/n-1))
