@@ -2,7 +2,7 @@
 
 A demonstration of how to use Python code to interact with audio. Aimed at beginners to audio and code, approximately high school level.
 
-Note this demo is not pure Python, it relys on some features of jupyter notebooks to embed audio files and videos in-line with the comments and explanations.
+Note this demo is not pure Python, it relies on some features of jupyter notebooks to embed audio files and videos in-line with the comments and explanations.
 
 Demonstrations include how to:
 
