@@ -1,27 +1,26 @@
 # Audio Code Demo
 
-A demonstration of how to use Python code to interact with audio
+A demonstration of how to use Python code to interact with audio. Aimed at beginners to audio and code, approximately high school level. T
 
-Demonstrations include:
+Demonstrations include how to:
 
-* How to generate a sine tone of a specific frequency
-* How to visualize and playback audio
-* How to generate a chirp or frequency sweep
-* How to record audio using your computer's mic
-* How to load a wav file
-* How to filter audio
+* Generate a sine tone of a specific frequency
+* Visualize and playback audio
+* Generate a chirp or frequency sweep
+* Record audio using your computer's mic
+* Load a wav file
+* Filter audio with low or high-pass filter
 
 ## Setup
 
 1. Install Python
 1. Get the code - 2 ways:
-   * Install Git, then clone this repository
+    * Install Git, then clone this repository
 
       ```bash
       git clone <repo-url>
       ```
-
-   * Download and unzip the code
+     * Download and unzip the code
 1. Navigate to the code directory from command line
 1. Install required Python packages
 
@@ -35,5 +34,8 @@ Demonstrations include:
     jupyter notebook AudioDemo.ipynb
     ```
 
-1. Run the notebook. I find it best to run one cell at a time, with `Shift + Enter`
+1. Run the notebook. May be best to run one cell at a time, with `Shift + Enter`
 1. Play around! Try editing and running the code cells to play with audio in your own way.
+
+## Contact
+Questions or suggestions? Email cvasc@dolby.com, or submit an Issue or Pull Request.
